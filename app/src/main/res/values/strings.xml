@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">NavigationDemo</string>
+    <string name="login_email">Email</string>
     <string name="login_button_text">Login</string>
+    <string name="signup_button_text">SignUp</string>
+    <string name="login_or_signup">Or if you did not register then sign up</string>
+    <string name="login_error">There is no user with this email address</string>
+    <string name="signup_error">Error is empty</string>
 </resources>

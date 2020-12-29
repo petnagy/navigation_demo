@@ -4,8 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/signup_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/signupEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailAddress"
+        android:id="@+id/signupEmailAddress"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,36 +26,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailAddressText"
+            android:id="@+id/signupEmailAddressText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lines="1" />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_margin="16dp"
-        android:text="@string/login_button_text"
-        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
-
-    <TextView
-        android:id="@+id/signUpOrLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="@string/login_or_signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/signUpButton"
+        android:id="@+id/signupButton"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_margin="16dp"
         android:text="@string/signup_button_text"
-        app:layout_constraintTop_toBottomOf="@+id/signUpOrLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/signupEmailAddress" />
 </androidx.constraintlayout.widget.ConstraintLayout>
