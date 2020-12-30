@@ -28,7 +28,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             val email = emailAddressText.text.toString()
             if (email.isNotEmpty() && preferenceService.checkEmail(email)) {
                 preferenceService.loggedInUser()
-                findNavController().navigate(R.id.dashboardActivity, null, NavOptions.Builder().setPopUpTo(R.id.loginFragment, true).build())
+                findNavController().navigate(
+                    R.id.action_loginFragment_to_dashboardActivity,
+                    null,
+                    NavOptions.Builder().setPopUpTo(R.id.loginFragment, true).build()
+                )
                 requireActivity().finish()
             } else {
                 emailAddressText.error = getString(R.string.login_error)

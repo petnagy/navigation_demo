@@ -6,4 +6,8 @@
     <string name="login_or_signup">Or if you did not register then sign up</string>
     <string name="login_error">There is no user with this email address</string>
     <string name="signup_error">Error is empty</string>
+    <string name="data_label">Data</string>
+    <string name="more_label">More</string>
+    <string name="user_label">User</string>
+    <string name="logout_text">Logout</string>
 </resources>

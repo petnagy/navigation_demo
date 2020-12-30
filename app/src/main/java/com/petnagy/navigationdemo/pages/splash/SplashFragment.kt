@@ -15,7 +15,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
         super.onResume()
         prefereneService = SharedPreferenceService(requireContext())
         if (prefereneService.isLoggedIn()) {
-            findNavController().navigate(R.id.dashboardActivity, null, NavOptions.Builder().setPopUpTo(R.id.loginFragment, true).build())
+            findNavController().navigate(R.id.action_splashFragment_to_dashboardActivity, null, NavOptions.Builder().setPopUpTo(R.id.loginFragment, true).build())
             requireActivity().finish()
         } else {
             wait(2000) {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dashboard_graph"
     app:startDestination="@id/dataFragment">
     <fragment
@@ -15,4 +16,11 @@
         android:id="@+id/userFragment"
         android:name="com.petnagy.navigationdemo.pages.user.UserFragment"
         android:label="UserFragment" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.petnagy.navigationdemo.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
 </navigation>

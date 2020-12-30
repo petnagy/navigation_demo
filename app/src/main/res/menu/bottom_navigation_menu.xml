@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/homeFragment"
+    <item android:id="@+id/dataFragment"
         android:title="Data"
         android:icon="@android:drawable/ic_dialog_map"/>
 
-    <item android:id="@+id/searchFragment"
+    <item android:id="@+id/moreFragment"
         android:title="More"
         android:icon="@android:drawable/ic_dialog_dialer"/>
 
-    <item android:id="@+id/notificationsFragment"
+    <item android:id="@+id/userFragment"
         android:title="User"
         android:icon="@android:drawable/ic_delete"/>
 </menu>

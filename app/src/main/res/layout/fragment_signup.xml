@@ -27,6 +27,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signupEmailAddressText"
+            android:lines="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
