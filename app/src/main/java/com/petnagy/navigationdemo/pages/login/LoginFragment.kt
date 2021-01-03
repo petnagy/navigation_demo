@@ -31,7 +31,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 findNavController().navigate(
                     R.id.action_loginFragment_to_dashboardActivity,
                     null,
-                    NavOptions.Builder().setPopUpTo(R.id.loginFragment, true).build()
+                    NavOptions.Builder()
+                        .setEnterAnim(R.anim.slide_in_left)
+                        .setExitAnim(R.anim.slide_out_left)
+                        .setPopUpTo(R.id.loginFragment, true).build()
                 )
                 requireActivity().finish()
             } else {

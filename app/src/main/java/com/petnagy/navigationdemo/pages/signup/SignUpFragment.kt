@@ -30,7 +30,10 @@ class SignUpFragment : Fragment(R.layout.fragment_signup) {
                 findNavController().navigate(
                     R.id.action_signUpFragment_to_loginFragment,
                     null,
-                    NavOptions.Builder().setPopUpTo(R.id.loginFragment, true).build()
+                    NavOptions.Builder()
+                        .setEnterAnim(R.anim.slide_in_right)
+                        .setExitAnim(R.anim.slide_out_right)
+                        .setPopUpTo(R.id.loginFragment, true).build()
                 )
             } else {
                 signupEmailAddressText.error = getString(R.string.signup_error)

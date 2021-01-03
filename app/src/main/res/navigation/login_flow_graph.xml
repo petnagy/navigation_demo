@@ -10,10 +10,18 @@
         android:label="SplashFragment">
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left" />
         <action
             android:id="@+id/action_splashFragment_to_dashboardActivity"
-            app:destination="@id/dashboardActivity" />
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -21,10 +29,16 @@
         android:label="LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
         <action
             android:id="@+id/action_loginFragment_to_dashboardActivity"
-            app:destination="@id/dashboardActivity" />
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -32,7 +46,11 @@
         android:label="SignUpFragment">
         <action
             android:id="@+id/action_signUpFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <activity
         android:id="@+id/dashboardActivity"
